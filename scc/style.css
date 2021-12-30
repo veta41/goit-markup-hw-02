@@ -4,25 +4,29 @@
   --secondary: #ffffff;
   --bg-footer: #2f303a;
   --accent: #2196f3;
+  --address-contact: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
-  background-color: var(--secondary);
   color: var(--primere-text);
+  background-color: var(--secondary);
 }
 
 .list {
   list-style: none;
 }
-.nav-logo .accent {
+
+.nav-logo {
   text-decoration: none;
-  color: var(--accent);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  color: var(--accent);
+}
+.accent {
+  color: var(--title);
 }
 .nav-link {
   text-decoration: none;
@@ -32,13 +36,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--title);
 }
-
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent);
+}
 .nav-contacts-item .nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--primere-text);
+}
+
+.nav-contacts-item .nav-link:focus,
+.nav-contacts-item .nav-link:hover {
+  color: var(--accent);
 }
 
 .title {
@@ -48,8 +56,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: #2f303a;
   color: var(--secondary);
+  background: #2f303a;
 }
 
 .btn {
@@ -68,34 +76,68 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title);
 }
 .pas-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--title);
 }
 .pas-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .user-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--title);
 }
 
 .user-text {
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+}
+
+.address-link-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-contact);
+  background: #000;
+}
+.address-item > .address-link-color {
+  color: var(--secondary);
+}
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--secondary);
+  background-color: var(--accent);
+}
+.portfolio-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title);
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primere-text);
 }
