@@ -20,7 +20,7 @@ body {
 
 .nav-logo {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
@@ -61,7 +61,7 @@ body {
 }
 
 .btn {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -72,14 +72,14 @@ body {
   border: none;
 }
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title);
 }
 .pas-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -102,13 +102,20 @@ body {
   line-height: 1.19;
 }
 
+.footer-bg {
+  background-color: var(--bg-footer);
+}
 .address-link-contact {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   color: var(--address-contact);
-  background: #000;
 }
 .address-item > .address-link-color {
+  color: var(--secondary);
+}
+
+.accent-fr {
   color: var(--secondary);
 }
 
@@ -126,7 +133,7 @@ body {
   background-color: var(--accent);
 }
 .portfolio-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
